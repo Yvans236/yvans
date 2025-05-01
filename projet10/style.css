@@ -1,0 +1,68 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to top, rgb(218, 219, 204) 0%, rgb(241, 230, 192) 100%);
+}
+.picture {
+    margin: 20px 0;
+    width: 450px;
+    height: 450px;
+}
+.picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/**tab css*/
+.tab {
+    overflow: hidden;
+    background-image: linear-gradient(to top, rgb(185, 185, 181) 10%, rgb(241, 230, 192) 100%);
+}
+
+/*style des buttons de tab */
+.tab button {
+    background-color: inherit;
+    letter-spacing: 2px;
+    float: left;
+    border: none;
+    outline: 0;
+    color: rgb(77, 76, 76);
+    cursor: pointer;
+    padding: 14px 50px;
+    transition: 0.5s;
+    font-size: 17px;
+}
+
+.tab button:hover {
+    background-color: beige;
+}
+
+
+.tabcontent {
+    color: rgb(77, 76, 76);
+    display: none;
+    flex-direction: column;
+    padding: 6px 50px;
+    animation: animation 0.5s ease-out;
+}
+
+/*animation*/
+
+@keyframes animation {
+    from {opacity: 0;}
+    to {opacity:1;}
+}
+
+h3 {
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
